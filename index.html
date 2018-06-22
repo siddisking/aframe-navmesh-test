@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello, World! • A-Frame</title>
+<meta name="description" content="Hello, World! • A-Frame">
+<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script> 
+<script src="/js/aframe-extras.js"></script> 
+<script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+</head>
+<body>
+<a-scene inspector-plugin-recast>
+	<a-assets>
+		<a-asset-item id="view" src="/models/Cemetary/Cementary.gltf"></a-asset-item>
+	</a-assets>
+<a-gltf-model position="0 0 0" src="#view" gltf-model id="model_1"></a-gltf-model>
+<a-entity position="11 1.6 0" rotation="0 0 0" id="rig" movement-controls="constrainToNavMesh: true">
+  <a-entity camera
+            position="0 1.6 0"
+            look-controls>
+    <a-cursor nav-debug-pointer raycaster="objects: [nav-mesh];"></a-cursor>
+  </a-entity>
+</a-entity>
+</a-scene>
+</body>
+</html>
