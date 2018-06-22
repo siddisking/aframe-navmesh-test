@@ -2,7 +2,7 @@
 testing the aframe inspector navmesh generator
 
 
-Simple Test of new navmesh plgin by don.
+Simple Test of new navmesh plugin by don.
 
 How to test ?
 
