@@ -7,6 +7,9 @@
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script> 
 <script src="./js/aframe-extras.js"></script> 
 <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+<script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+
+
 </head>
 <body>
 <a-scene inspector-plugin-recast>
@@ -21,6 +24,8 @@
     <a-cursor nav-debug-pointer raycaster="objects: [nav-mesh];"></a-cursor>
   </a-entity>
 </a-entity>
+  <a-entity environment="preset:forest" ></a-entity>
+
 </a-scene>
 </body>
 </html>
